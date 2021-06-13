@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--设置手机样式，手机也能访问-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            max-width: 100%;
+        }
+    </style>
+</head>
+<!--
+    img标签
+    1、作用：发出get请求，展示一张图片
+    2、属性：alt/heigth/width/src
+    3、事件：onload/onerror
+    4、响应式：max-width：100%
+    5、可替换元素
+-->
+<body>
+    <img id="xxx" src="./image/dog.jpg" alt="这是一只狗子"/>
+    <script>
+        xxx.onload = function(){
+            console.log("图片加载成功")
+        };
+        xxx.onerror = function(){
+            console.log("图片加载成功")
+            xxx.src = "./image/404.png"
+        }
+    </script>
+</body>
+</html>
