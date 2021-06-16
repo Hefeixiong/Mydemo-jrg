@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            table-layout:auto;
+            border-collapse: collapse;
+            border-spacing: 0ch;
+        }
+        td,th{
+            border: 1px  solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>    </th>
+                <th>table的标签和样式</th>
+                <th>含义</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>标签</th>
+                <td>thead</td>
+                <td>表格的头部，内容一般是固定的，放在th里面</td>
+            </tr>
+            <tr>
+                <th>标签</th>
+                <td>tbody</td>
+                <td>表格的内容</td>
+            </tr>
+            <tr>
+                <th>标签</th>
+                <td>tfoot</td>
+                <td>表格的底部</td>
+            </tr>
+            <tr>
+                <th>标签</th>
+                <td>tr</td>
+                <td>表格的一行</td>
+            </tr>
+            <tr>
+                <th>标签</th>
+                <td>td</td>
+                <td>表格的数据</td>
+            </tr>
+            <tr>
+                <th>标签</th>
+                <td>th</td>
+                <td>表格的表头内容</td>
+            </tr>
+            <tr>
+                <th>样式</th>
+                <td>table-layout</td>
+                <td>常用的是auto*（每个格子的大小平均、fixed（那个内容长格子就大）</td>
+            </tr>
+            <tr>
+                <th>样式</th>
+                <td>table-collapce</td>
+                <td>值：collapce，单元格没有间距</td>
+            </tr>
+            <tr>
+                <th>样式</th>
+                <td>border-spacing</td>
+                <td>每个格子的间距</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
